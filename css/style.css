@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+
+:root {
+  /* colors */
+  /* Primary */
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+
+  /* Secondary */
+  --LightCyan: hsla(179, 62%, 43%, 0.75);
+
+  /* Neutral */
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+/* resets start */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background: var(--LightGray);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+/* resets finish */
+
+.grid-container {
+  width: 375px;
+  display: grid;
+  grid-template-areas: "join" "subscribe" "whyus";
+  margin: 2em;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.join,
+.subscribe,
+.whyus {
+  padding: 2em;
+  display: grid;
+}
+
+.join {
+  grid-area: join;
+  background: #fff;
+}
+
+.join h1 {
+  margin-bottom: 1em;
+  color: var(--Cyan);
+}
+
+.join h4 {
+  color: var(--BrightYellow);
+  margin-bottom: 1em;
+}
+
+.join p {
+  line-height: 1.85em;
+  color: var(--GrayishBlue);
+}
+
+.subscribe {
+  grid-area: subscribe;
+  background: var(--Cyan);
+  color: #fff;
+  grid-gap: 2em;
+}
+
+.subscribe .center {
+  display: grid;
+  grid-gap: 1em;
+}
+
+.subscribe .center .price {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1em;
+  align-items: center;
+}
+
+.subscribe .center .price span:first-of-type {
+  font-size: 2.5em;
+  color: #fff;
+  font-weight: 700;
+}
+
+.subscribe .center .price span:last-of-type {
+  opacity: 0.5;
+  font-size: 1.1em;
+}
+
+.subscribe .center p:last-of-type {
+  font-size: 1.1em;
+}
+
+.subscribe button {
+  padding: 1em;
+  font-size: 1.1em;
+  background: var(--BrightYellow);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.whyus {
+  grid-area: whyus;
+  background: var(--LightCyan);
+  color: #fff;
+  grid-gap: 2em;
+}
+
+.whyus h3 {
+  align-self: center;
+}
+
+.whyus ul {
+  color: var(--LightGray);
+  font-size: 1em;
+}
+
+.whyus ul li:not(last-of-type) {
+  margin-bottom: 0.5em;
+}
+
+footer {
+  padding: 1em;
+  background-color: var(--LightGray);
+}
