@@ -151,6 +151,8 @@ button {
 footer {
   padding: 1em;
   background-color: var(--LightGray);
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 900px) {
