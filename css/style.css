@@ -45,7 +45,7 @@ button {
 /* resets finish */
 
 .grid-container {
-  /*max-width: 375px;*/
+  max-width: 375px;
   display: grid;
   grid-template-areas: "join" "subscribe" "whyus";
   margin: 2em;
@@ -153,7 +153,7 @@ footer {
 @media screen and (min-width: 900px) {
   .grid-container {
     grid-template-areas: "join join" "subscribe whyus";
-    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr;*/
     max-width: 100%;
   }
 
