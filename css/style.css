@@ -27,6 +27,9 @@ body {
   font-family: "Karla", sans-serif;
   font-size: 16px;
   background: var(--LightGray);
+}
+
+main {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -153,7 +156,7 @@ footer {
 @media screen and (min-width: 900px) {
   .grid-container {
     grid-template-areas: "join join" "subscribe whyus";
-    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: 1fr 1fr;
     max-width: 100%;
   }
 
