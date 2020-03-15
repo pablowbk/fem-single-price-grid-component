@@ -165,6 +165,16 @@ footer {
   justify-content: center;
 }
 
+.attribution a {
+  color: var(--Cyan);
+  transition: color 0.2s;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  color: var(--BrightYellow);
+}
+
 @media screen and (min-width: 900px) {
   .grid-container {
     grid-template-areas: "join join""subscribe whyus";
