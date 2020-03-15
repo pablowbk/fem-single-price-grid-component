@@ -126,6 +126,16 @@ button {
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.subscribe button:hover {
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1), 0 0 0 2px #fff;
+}
+
+.subscribe button:active {
+  transform: scale(0.9);
 }
 
 .whyus {
@@ -153,6 +163,16 @@ footer {
   background-color: var(--LightGray);
   display: flex;
   justify-content: center;
+}
+
+.attribution a {
+  color: var(--Cyan);
+  transition: color 0.2s;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  color: var(--BrightYellow);
 }
 
 @media screen and (min-width: 900px) {
