@@ -50,7 +50,7 @@ button {
 .grid-container {
   max-width: 375px;
   display: grid;
-  grid-template-areas: "join" "subscribe" "whyus";
+  grid-template-areas: "join""subscribe""whyus";
   margin: 2em;
   border-radius: 5px;
   overflow: hidden;
@@ -127,7 +127,7 @@ button {
   border-radius: 5px;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: all 0.1s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 
 .subscribe button:hover {
@@ -135,7 +135,7 @@ button {
 }
 
 .subscribe button:active {
-  transform: scale(0.9);
+  transform: scale(.9);
 }
 
 .whyus {
@@ -177,7 +177,7 @@ footer {
 
 @media screen and (min-width: 900px) {
   .grid-container {
-    grid-template-areas: "join join" "subscribe whyus";
+    grid-template-areas: "join join""subscribe whyus";
     grid-template-columns: 1fr 1fr;
     max-width: 100%;
   }
